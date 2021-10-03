@@ -11,14 +11,24 @@
 <body>
     <div class="container">
         <div class="single_form">
-            <form action="lab02.php" method="get">
+            <form action="lab02.php" method="post">
                 <br>
                 <div class="row">
                     <div class="col-15">
                         <lable>Enter your name:</lable>
                     </div>
                     <div class="col-85">
-                        <input type="text" size="23" maxlength="50" name="name">
+                        <input type="text" size="23" maxlength="50" name="name" placeholder=" Enter your name...">
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-15">
+                        <label>Your gender:</label>
+                    </div>
+                    <div class="col-85">
+                        <input type="radio" name="gender" value="Male"> <lable>Male</lable>
+                        <input type="radio" name="gender" value="Female"> <lable>Female </lable>
                     </div>
                 </div>
                 <br>
@@ -27,7 +37,7 @@
                         <lable>Enter your class:</lable>
                     </div>
                     <div class="col-85">
-                        <input type="text" size="23" maxlength="23" name="class">
+                        <input type="text" size="23" maxlength="23" name="class" placeholder=" Enter your class...">
                     </div>
                 </div>
                 <br>
@@ -36,21 +46,30 @@
                         <lable>Enter your university:</lable>
                     </div>
                     <div class="col-85">
-                        <input type="text" size="23" maxlength="50" name="university">
+                        <input type="text" size="23" maxlength="50" name="university" placeholder=" Enter your university...">
                     </div>
                 </div>
                 <br>
                 <div class="row">
                     <div class="col-15">
-                        <lable>Enter your hobby:</lable>
+                        <lable>Your hobby:</lable>
                     </div>
                     <div class="col-85">
-                        <input type="text" size="23" maxlength="100" name="hobby">
+                        <input type="checkbox" id="soccer" name="hobby[]" value="Play Soccer">
+                        <label for="soccer"> Play Soccer</label><br>
+                        <input type="checkbox" id="game" name="hobby[]" value="Play Game">
+                        <label for="game"> Play Game</label><br>
+                        <input type="checkbox" id="swimming" name="hobby[]" value="Swimming">
+                        <label for="swimming"> Swimming</label><br>
+                        <input type="checkbox" id="listen music" name="hobby[]" value="Listen Music">
+                        <label for="listen music"> Listen Music</label><br>
+                        <input type="checkbox" id="book" name="hobby[]" value="Read Book">
+                        <label for="book"> Read Book</label><br>
                     </div>
                 </div>
                 <br>
                 <input type="submit" value="Submit">
-
+                <input type="reset" value="Erase and Restart">
             </form>
         </div>
     </div>
